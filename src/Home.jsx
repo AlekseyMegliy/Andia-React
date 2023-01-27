@@ -15,7 +15,7 @@ function App() {
   
   return (
     <div className="App">
-      <Header/>
+      <Header page={1}/>
       <Slider></Slider>
     </div>
   )
