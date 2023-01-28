@@ -8,7 +8,7 @@ import slide4 from './assets/img/slider/4.jpg'
 
 function Slider(){
     const[slide, setSlide] = useState(1)
-   
+    const slides = [slide1, slide2, slide3, slide4]
     let inter=null
     const inviz={
       left: "-100%",
@@ -36,11 +36,11 @@ function Slider(){
   //     return setInterval(right, 2000);
   //  }
   //  interval()
-  // useEffect(() => {
-  //   const interval = setInterval(right(), 1000);
-  //   return () => clearInterval(interval);
-  // }, []);
-  const nodeRef = useRef(null)
+  useEffect(() => {
+    const interval = setInterval(right(), 1000);
+    return () => clearInterval(interval);
+  }, []);
+  const nodeRef = [useRef(null),useRef(null),useRef(null),useRef(null)]
     return (
       <div className="block-slider">
         <div className="container">
@@ -48,32 +48,25 @@ function Slider(){
             <div className="slider col-sm-12 col-md-9"  id="slider">
               <div className="big-slider " >
                 <span className="slider-button-left" onClick={left()} ></span>   
-                <SwitchTransition mode={"out-in"}>
-                  <CSSTransition in={slide===1} nodeRef={nodeRef} timeout={500}  classNames="slide">
-                    <img alt="Slide 1" ref={nodeRef} className=" big-img" style={slide===1? undefined : inviz  }  src={slide1} />
-                  </CSSTransition>  
-                </SwitchTransition>
+                  
+                  <SwitchTransition mode={'out-in'}>
+                    <CSSTransition
+                     key={slide} 
+                    in={slide===1} 
+                    nodeRef={nodeRef[slide-1]} 
+                    timeout={500}  
+                    classNames="slide" 
+                    addEndListener={(done) => {nodeRef[slide-1].current.addEventListener("transitionend", done, false);}} >
+                      
+                      <img alt="Slide 1" ref={nodeRef[slide-1]} className=" big-img"   src={slides[slide-1]} />
+                    
+                    </CSSTransition>  
+                  </SwitchTransition>
                   <p className=" slider-text"  style={slide===1? undefined : inviz  }>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime et obcaecati, illo porro ex provident nisi ipsam cupiditate quo! Quam, impedit veniam commodi dolores </p>
-                  
-                  
-                  <CSSTransition in={slide===2} nodeRef={nodeRef} timeout={500}  classNames="slide">
-                    <img alt="Slide 2" ref={nodeRef} className=" big-img"  style={slide===2? undefined : inviz  } src={slide2} />
-                  </CSSTransition>  
                   <p className=" slider-text"  style={slide===2? undefined : inviz  }>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste magnam eum suscipit accusantium explicabo illum voluptatibus nisi pariatur deleniti, ipsa  </p>
-                  
-
-                  <CSSTransition in={slide===3} nodeRef={nodeRef} timeout={500}  classNames="slide">
-                    <img alt="Slide 3" ref={nodeRef} className=" big-img"  style={slide===3? undefined : inviz  } src={slide3} />
-                  </CSSTransition>  
                   <p className=" slider-text"  style={slide===3? undefined : inviz  }>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eveniet aspernatur repellendus minus error voluptatum nostrum velit, cupiditate architecto adipisci dolorem  </p>
-                  
-                  
-                  <CSSTransition in={slide===4} nodeRef={nodeRef} timeout={500}  classNames="slide">     
-                    <img alt="Slide 4" ref={nodeRef} className=" big-img " style={slide===4? undefined : inviz  } src={slide4} />
-                  </CSSTransition>  
                   <p className=" slider-text" style={slide===4? undefined : inviz  }>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus spernatur repellendus minus error voluptatum nostrum velit, cupiditate architecto </p>
                 
-
                 <span className="slider-button-right" onClick={right()}></span>
               </div>
               <div className="col-12 sm-imgs " id="sm-imgs">
