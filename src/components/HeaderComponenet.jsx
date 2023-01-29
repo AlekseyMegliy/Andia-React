@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import { Link, Route } from 'react-router-dom'
-import './Header.css'
+import '../styles/Header.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from "./assets/img/logo.png";
-import home_img from './assets/ico//home-sm.png';
-import portfolio_img from './assets/ico//portfolio-sm.png';
-import blog_img from './assets/ico//blog-sm.png';
-import services_img from './assets/ico//services-sm.png';
-import about_img from './assets/ico//about-sm.png';
-import contact_img from './assets/ico//contact-sm.png';
+import logo from "../assets/img/logo.png";
+import home_img from '../assets/ico//home-sm.png';
+import portfolio_img from '../assets/ico//portfolio-sm.png';
+import blog_img from '../assets/ico//blog-sm.png';
+import services_img from '../assets/ico//services-sm.png';
+import about_img from '../assets/ico//about-sm.png';
+import contact_img from '../assets/ico//contact-sm.png';
 
 
 function Header(props){

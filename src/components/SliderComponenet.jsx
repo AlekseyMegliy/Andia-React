@@ -1,10 +1,10 @@
 import React, {useState, useEffect, useRef } from 'react'
 import { CSSTransition, SwitchTransition } from 'react-transition-group'
-import './Slider.css'
-import slide1 from './assets/img/slider/1.jpg'
-import slide2 from './assets/img/slider/2.jpg'
-import slide3 from './assets/img/slider/3.jpg'
-import slide4 from './assets/img/slider/4.jpg'
+import '../styles/Slider.css'
+import slide1 from '../assets/img/slider/1.jpg'
+import slide2 from '../assets/img/slider/2.jpg'
+import slide3 from '../assets/img/slider/3.jpg'
+import slide4 from '../assets/img/slider/4.jpg'
 
 function Slider(){
     const[slide, setSlide] = useState(1)
