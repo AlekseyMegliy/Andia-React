@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.block-benefits h1{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    padding-top: 50px;
+    font-size: 30px;
+    font-weight:bold;
+    color: rgba(0, 0, 0, 0.704);
+}
+.block-benefits h1 span{
+    color: #9d426b;
+
+}
+.block-benefits h3{
+    font-style: italic;
+    text-align: center;
+    font-size: 20px;
+    opacity: 0.6;
+    margin-bottom: 50px;
+}
+.block-benefits .row{
+    justify-content: center;
+}
+.benefits{
+    text-align: center;
+}
+.benefits div{
+    background-color: rgba(0, 0, 0, 0.049);
+    padding-bottom: 20px ;
+    border-bottom: #9d426b solid 3px;
+    box-shadow: inset black 0px 0px 20px -20px;
+    transition: box-shadow 0.3s linear ;
+}
+.benefits img{
+    opacity: 0.6;
+    margin: 10px 0;
+}
+.benefits h4{
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing:-1px;
+    opacity: 0.8;
+
+}
+.benefits p{
+    font-size: 0.9em;
+    opacity: 0.9;
+    padding: 0 10px;
+}
+.benefits a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+    font-style: italic;
+    padding: 0.4em 2em;
+    background-color:#9d426b;
+
+}
+.benefits div:hover{
+    box-shadow: inset black 0px 0px 25px -15px;
+}
+@media all and (max-width:1200px ){
+    .benefits h4{
+        font-size: 1em;
+
+    }
+}
+@media all and (max-width:991px ){
+    .benefits a{
+        padding: 0.4em 1em;
+    }
+    .benefits h4{
+        font-size: 0.8em;
+
+    }
+}
+@media all and (max-width:767px ){
+    .benefits div{
+        margin-bottom: 15px;
+    }
+    .benefits{
+        margin: 0;
+    }
+    .benefits h4{
+         font-size: 1em;
+    }
+}

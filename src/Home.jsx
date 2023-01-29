@@ -1,12 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
-import'./Header.jsx'
-import './Slider'
-import { Link, Route } from 'react-router-dom'
-import Header from './Header.jsx'
-import Slider from './Slider'
-
+import'./HeaderComponenet.jsx'
+import './SliderComponenet'
+import Header from './HeaderComponenet.jsx'
+import Slider from './SliderComponenet'
+import Benefits from './BenefitsComponent'
 
 
 
@@ -17,6 +14,7 @@ function App() {
     <div className="App">
       <Header page={1}/>
       <Slider></Slider>
+      <Benefits></Benefits>
     </div>
   )
 }

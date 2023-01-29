@@ -9,7 +9,6 @@ import slide4 from './assets/img/slider/4.jpg'
 function Slider(){
     const[slide, setSlide] = useState(1)
     const slides = [slide1, slide2, slide3, slide4]
-    let inter=null
     const inviz={
       left: "-100%",
       display:"none"
@@ -20,14 +19,14 @@ function Slider(){
 
     function left(){
       if(slide===1){
-        return ()=>setSlide((slide)=>slide=4)
+        return ()=>setSlide(4)
       } else{
         return ()=>setSlide(slide-1)
       }
     }
     function right(){
       if(slide===4){
-        return ()=>setSlide((slide)=>slide=1)
+        return ()=>setSlide(1)
       } else{
         return ()=>setSlide(slide+1)
       }
@@ -37,7 +36,7 @@ function Slider(){
   //  }
   //  interval()
   useEffect(() => {
-    const interval = setInterval(right(), 1000);
+    const interval = setInterval(right, 1000);
     return () => clearInterval(interval);
   }, []);
   const nodeRef = [useRef(null),useRef(null),useRef(null),useRef(null)]

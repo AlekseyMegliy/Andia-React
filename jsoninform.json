@@ -1,0 +1,30 @@
+
+{
+"benefitInfos": {
+    "1": {"id":1, "imgSrc": "eye", "header": "BEAUTIFUL WEBSITES", "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. Praesentium quae cum, non incidunt voluptas et..."},
+    "2": {"id":2, "imgSrc": "layout", "header": "RESPONSIVE LAYOUT", "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. Praesentium quae cum, non incidunt voluptas et..."},
+    "3": {"id":3, "imgSrc": "awesome", "header": "AWESOME LOGOS", "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. Praesentium quae cum, non incidunt voluptas et..."},
+    "4": {"id":4, "imgSrc": "print", "header": "HIGH RES PRINTS", "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. Praesentium quae cum, non incidunt voluptas et..."}
+},
+"worksinfo":{
+    "0": {"id":1, "type": "web", "header": "LOREM WEBSITE", "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum."},
+    "1": {"id":2, "type": "logo", "header": "IPSUM LOGO", "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum."},
+    "2": {"id":3, "type": "print", "header": "DOLOR PRINT", "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum."},
+    "3": {"id":4, "type": "web", "header": "SIT WEBSITE", "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum."},
+    "4": {"id":5, "type": "logo", "header": "AMET LOGO", "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum."},
+    "5": {"id":6, "type": "print", "header": "CONSECTETUR PRINT", "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum."},
+    "6": {"id":7, "type": "web", "header": "ADIPISICING WEBSITE", "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum."},
+    "7": {"id":8, "type": "logo", "header": "ELIT LOGO", "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum."},
+    "8": {"id":9, "type": "print", "header": "EUM PRINT", "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum."},
+    "9": {"id":10, "type": "web", "header": "PERSPICIATIS WEBSITE", "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum."},
+    "10": {"id":11, "type": "logo", "header": "EIUS LOGO", "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum."},
+    "11": {"id":12, "type": "print", "header": "elit PRINT", "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum."}
+
+},
+"teammetes":{
+    "1": {"id":1, "header": "John Doe", "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum."},
+    "2": {"id":2, "header": "Always Hurry", "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum."},
+    "3": {"id":3, "header": "Quickly Solve", "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum."},
+    "4": {"id":4, "header": "Always Tired", "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum."}
+}
+}
