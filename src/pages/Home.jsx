@@ -4,6 +4,7 @@ import Slider from '../components/SliderComponenet.jsx'
 import Benefits from '../components/BenefitsComponent.jsx'
 import Latest from '../components/LatestComponent.jsx'
 import Testimonials from '../components/TestimonialsComponent.jsx'
+import Footer from '../components/FooterComponent.jsx'
 
 function App() {
  
@@ -15,6 +16,7 @@ function App() {
       <Benefits />
       <Latest />
       <Testimonials />
+      <Footer />
     </div>
   )
 }
