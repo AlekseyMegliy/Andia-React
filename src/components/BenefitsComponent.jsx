@@ -20,7 +20,7 @@ function Benefits(){
                      {Object.keys(JsonInfo.benefitInfos).map((item, index) => (
                         <div className="col-sm-12 col-md-3 benefits" key={index}>
                             <div>
-                            <img class="col-2 col-sm-1 col-md-4  col-lg-3" src={benefImgs[index]}/>
+                            <img className="col-2 col-sm-1 col-md-4  col-lg-3" src={benefImgs[index]}/>
                             <h4>{JsonInfo.benefitInfos[index+1].header}</h4>
                             <p>{JsonInfo.benefitInfos[index+1].mainText}</p>
                             <Link to='/'>Read more</Link>
