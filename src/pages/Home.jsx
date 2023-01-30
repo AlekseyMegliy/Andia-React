@@ -3,7 +3,7 @@ import Header from '../components/HeaderComponenet.jsx'
 import Slider from '../components/SliderComponenet.jsx'
 import Benefits from '../components/BenefitsComponent.jsx'
 import Latest from '../components/LatestComponent.jsx'
-
+import Testimonials from '../components/TestimonialsComponent.jsx'
 
 function App() {
  
@@ -14,6 +14,7 @@ function App() {
       <Slider />
       <Benefits />
       <Latest />
+      <Testimonials />
     </div>
   )
 }
