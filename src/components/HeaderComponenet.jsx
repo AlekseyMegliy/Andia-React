@@ -33,7 +33,7 @@ function Header(props){
                     <img alt="Home" src={home_img} />
                     <p>HOME</p>
                 </Link>
-                <Link className={props.page===2 ? 'current': undefined}  to="/" >
+                <Link className={props.page===2 ? 'current': undefined}  to="/portfolio" >
                     <img alt="Portfolio" src={portfolio_img} />
                     <p>PORTFOLIO</p>
                 </Link>

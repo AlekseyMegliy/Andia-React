@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Home from './pages/Home'
 import About from './pages/About'
-// import './index.css'
+import Portfolio from './pages/Portfolio'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -13,6 +13,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/portfolio",
+    element: <Portfolio />,
   },
   {
     path: "/about",
